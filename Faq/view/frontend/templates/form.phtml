@@ -1,0 +1,15 @@
+<?php
+    $collection = $this->getFaqCollection();
+?>
+<legend class="legend"><h2><span><?php echo $block->escapeHtml(__('FAQ Page')) ?></span></h2></legend><br />
+ <?php foreach ($collection as $key => $data): ?>
+
+ <div id="element" data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": true}}'>
+    <div data-role="collapsible">
+        <div data-role="trigger">
+            <span><h4>-&nbsp;<?php echo $data->getQuestion(); ?></h4></span>
+        </div>
+    </div>
+    <div data-role="content">&nbsp;&nbsp;<strong>Ans:</strong>&nbsp;<?php echo $data->getAnswer(); ?></div>
+</div>
+<?php endforeach; ?>

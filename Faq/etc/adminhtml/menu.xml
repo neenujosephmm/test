@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Ceymox Team
+ * @copyright Copyright (c) 2019 Ceymox (https://ceymox.com)
+ * @package Ceymox_Faq
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+  <menu> 
+  <add id="Ceymox_Faq::faq" title="FAQ" module="Ceymox_Faq" sortOrder="51" action="faq/index/" resource="Ceymox_Faq::faq"/>  
+  <add id="Ceymox_Faq::faqlist" title="FAQ List" module="Ceymox_Faq" sortOrder="51" action="faq/index/" resource="Ceymox_Faq::faq" parent="Ceymox_Faq::faq"/> 
+  </menu>
+</config>

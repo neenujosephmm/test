@@ -1,0 +1,10 @@
+<?php
+    $collection = $this->getFaqCollection();
+?>
+<?php if (count($collection)!=0): ?>
+<legend class="legend"><h2><span><?php echo $block->escapeHtml(__('FAQ Page')) ?></span></h2></legend><br />
+<?php foreach ($collection as $key => $data): ?>
+<span><h4>-&nbsp;<?php echo $data->getQuestion(); ?></h4></span>
+&nbsp;&nbsp;<strong>Ans:</strong>&nbsp;<?php echo $data->getAnswer(); ?>
+<?php endforeach; ?>
+<?php endif; ?>
